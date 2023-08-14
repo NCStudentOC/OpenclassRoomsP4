@@ -1,0 +1,41 @@
+//button EXPLORER
+
+.button {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    &_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 218px;
+        height: 50px;
+        border-radius: 25px;
+        background: linear-gradient(175deg, $primary 0%, $secondary 100%);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+            background: linear-gradient(182deg, $primary 0%, $secondary 100%);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    &_text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        color: $light;
+        padding: 0px 20px;
+
+    }
+
+}
+
+.button-command{
+    display: flex;
+    justify-content: center;
+    margin-bottom:  40px ;
+   }
+

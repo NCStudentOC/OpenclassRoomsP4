@@ -1,0 +1,42 @@
+//  COEUR
+// dans mixins pour les transitions
+
+.heart {
+
+    Display: flex;
+    Align-items: center;
+    Justify-content: center;
+    position:absolute;
+    top: 197px;
+    right: 35px;
+
+    &_regular {
+        position: absolute;
+
+
+               
+        &:hover {
+            opacity:0.5;  
+            transition: all 1s ease-in-out;
+
+        }
+    }
+
+   
+    &_solid {
+        position: absolute;
+       color: transparent;
+       line-height: 1;
+       opacity: 0;
+       background-clip: text;
+        -webkit-background-clip: text ;
+       background-image: linear-gradient(182deg, #9356DC 0%, #FF79DA 100%) ;
+       transition: all 800ms ease-in-out;
+       animation-direction: alternate;
+           
+
+        &:hover {
+          @include heart;
+        }
+    }
+}

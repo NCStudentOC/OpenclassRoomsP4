@@ -1,0 +1,24 @@
+//  PARTIE LES RESTAURANTS  PAGE INDEX ACCUEIL
+// liés à cardaccueil.scss 
+
+
+// mise en forme card restaurant
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    background-color: $greylight;
+    padding-bottom: 48px;
+
+// titre les restaurants
+    &_title {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        padding-left: 20px;
+        margin-top: 48px;
+        margin-bottom: 20px;
+    }
+}
+
+

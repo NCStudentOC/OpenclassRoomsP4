@@ -1,0 +1,108 @@
+// MISE EN FORME  CARDS FUNCTIONS  DE COMMANDE
+
+.card_function {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 32px;
+    padding-right: 20px;
+  
+ &_filter {
+    display: flex;
+    height: 72px;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 33px;
+    border-radius: 20px;
+    background: var(--background, $greylight);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+   
+  }
+  &_filter_text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $dark;
+
+  }
+
+&_filter:hover {
+    .grey{
+      color:$primary;
+      }
+      box-shadow: 0px 4px 15px 0px rgba(0,0,0, 0.35);
+      background: var(--background, $light);
+      transition: all 0.5s ease-in-out;
+     
+}
+  
+
+// PETIT ICONE ROND NUMEROTEE
+
+  .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: $primary;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    color:$light;
+    transform:translate(-50%,100%);
+  }
+  
+  .numero {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    color:$light;
+  }
+}
+
+
+  //ICONE GRISE 
+  // liés à icon.scss changement de couleur
+  .grey {
+    color:$greyicon;
+ 
+}
+
+@media screen and (min-width: 1024px) {
+
+
+  .function {
+    margin: 50px 180px;
+
+    &_title {
+        margin-bottom: 25px;
+    }
+}
+
+.card_function {
+    justify-content: space-between;
+    flex-direction: row;
+
+
+
+    &_filter {
+        display: flex;
+        height: 72px;
+        align-items: center;
+        gap: 30px;
+        padding: 0px 33px;
+        border-radius: 20px;
+        background: var(--background, $greylight);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+    }
+}
+}
+
+
+@media screen and (min-width: 767.8px) {
+
+}

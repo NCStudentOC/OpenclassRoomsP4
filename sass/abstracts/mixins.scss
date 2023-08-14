@@ -1,0 +1,23 @@
+
+// MIXINS HEART DEGRADE APPARITION
+
+@mixin heart{ 
+            opacity: 1;
+            background-image: linear-gradient(182deg, #9356DC 0%, #FF79DA 100%) ;
+            background-size: 100% ;
+            background-clip: text;
+            -webkit-background-clip: text ;
+            transition: 800ms ease-in-out;   
+    }
+
+// MIXINS CHECK VERT  APPARITION PAGE DES RESTAURANTS
+
+@mixin check {  
+    right :0px; 
+    opacity: 1;
+}
+
+@mixin margin{
+    margin-right: 60px;
+
+}

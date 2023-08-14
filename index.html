@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>OH MY FOOD</title>
+</head>
+
+<body>
+    <!-- HEADER LOGO -->
+    <header>
+        <section class="logo">
+            <h1 class="logo_title">ohmyfood</h1>
+        </section>
+    </header>
+
+    <!-- FORMULAIRE DE RECHERCHE -->
+    <section>
+        <article class="search">
+            <form class="search_container">
+                <i class="fa-solid fa-location-dot fa-sm "></i>
+                <input type="search" name="recherche" placeholder="Paris, Belleville" class="search_box">
+            </form>
+        </article>
+    </section>
+
+    <!-- RESERVATION ET LIENS VERS LES RESTAURANTS -->
+    <section>
+        <article class="reserve">
+            <P class="reserve_title">Réservez le menu qui vous convient</p>
+            <p class="reserve_subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a href="#restaurants">
+                <article class="button">
+                    <div class=" button_form">
+                        <p class="button_text"> Explorer nos restaurants </p>
+                    </div>
+                </article>
+            </a>
+        </article>
+    </section>
+
+    <!-- PARTIE FONCTIONNEMENT DU SITE EN TROIS BUTTON -->
+
+    <section class="function">
+        <p class="function_title"> Fonctionnement</p>
+
+        <div class="card_function">
+            <a href="#" class="card_function_hover">
+                <div class="card_function_filter">
+                    <div class="circle">
+                        <div class="numero"> 1
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-mobile-screen-button fa-lg grey"> </i>
+                    <p class="card_function_filter_text"> Choisissez un restaurant </p>
+                </div>
+            </a>
+
+            <a href="#" class="card_function_hover">
+                <div class="card_function_filter">
+                    <div class="circle">
+                        <div class="numero"> 2
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-list-ul fa-lg grey" > </i>
+                    <p class="card_function_filter_text">Composer votre menu</p>
+                </div>
+            </a>
+            <a href="#" class="card_function_hover">
+                <div class="card_function_filter">
+                    <div class="circle">
+                        <div class="numero"> 3
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-store fa-lg grey" ></i>
+                    <p class="card_function_filter_text">Dégustez au restaurant</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- CARDS DE PRESENTATION DES RESTAURANTS-->
+    <section class="restaurants" id="restaurants">
+        <p class="restaurants_title"> Restaurants</p>
+        <section class="cards">
+            <article class="cards_restaurants">
+                <a href="restaurant/lapalettedugout.html">
+                    <img src="assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une table de restaurant">
+                    <div class="cards_text">
+                        <h1 class="cards_name"> La palette du goût</h1>
+                        <p class="cards_adress">Ménilmontant</p>
+                    </div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart fa-xl heart_regular" aria-hidden="true"></i>
+                            <i class="fa-solid fa-heart fa-xl heart_solid" aria-hidden="true"></i>
+                        </div>
+                   
+                        <div class="cards_new">
+                            <p class="cards_new_text">nouveau</p>
+                        </div>
+                    
+                </a>
+            </article>
+
+
+            <article class="cards_restaurants">
+                <a href="restaurant/lanoteenchantée.html">
+                    <img src="assets/images/stil-u2Lp8tXIcjw-unsplash2.jpg" alt="Photo d'une table de restaurant">
+
+                    <div class="cards_text">
+                        <h1 class="cards_name"> La note enchantée</h1>
+                        <p class="cards_adress">Charonne</p>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart fa-xl heart_regular" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart fa-xl heart_solid" aria-hidden="true"></i>
+                    </div>
+                        <div class="cards_new">
+                            <p class="cards_new_text">nouveau</p>
+                        </div>
+                    
+                </a>
+            </article>
+
+            <article class="cards_restaurants">
+                <a href="restaurant/alafrançaise.html">
+                    <img src="assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une table de restaurant">
+                    <div class="cards_text">
+                        <h1 class="cards_name"> A la française</h1>
+                        <p class="cards_adress">Cité rouge</p>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart fa-xl heart_regular" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart fa-xl heart_solid" aria-hidden="true"></i>
+                    </div>
+                    
+                </a>
+            </article>
+
+
+            <article class="cards_restaurants">
+                <a href="restaurant/ledelicedessens.html">
+                    <img src="assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="Photo d'une table de restaurant">
+                    <div class="cards_text">
+                        <h1 class="cards_name"> Le délice des sens</h1>
+                        <p class="cards_adress">Folie-Méricourt</p>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart fa-xl heart_regular" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart fa-xl heart_solid" aria-hidden="true"></i>
+                    </div>
+                 
+                </a>
+            </article>
+        </section>
+    </section>
+
+    <!-- FOOTER CLASSIQUE AVEC LESDIVERS INFOS -->
+    <footer>
+        <section class="foot">
+            <article class="foot_logo">
+                <p class="foot_logo_title">ohmyfood</p>
+            </article>
+            <article class="foot_first">
+                <div class="foot_position">
+                    <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
+                    <h2 class="foot_text"> Proposer un restaurant </h2>
+                </div>
+                <div class="foot_position">
+                    <i class="fa-solid fa-handshake-angle fa-xs" style="color: #ffffff;"></i>
+                    <h2 class="foot_text"> Devenir partenaire </h2>
+                </div>
+            </article>
+            <article class="foot_second">
+                <div>
+                    <h2 class="foot_text "> Mentions légales </h2>
+                </div>
+                <div>
+                  <a href="mailto:nchcreation@gmail.com"> <h2 class="foot_text logo_position"> Contact </h2></a>
+                </div>
+            </article>
+
+
+        </section>
+    </footer>
+</body>
+
+</html>

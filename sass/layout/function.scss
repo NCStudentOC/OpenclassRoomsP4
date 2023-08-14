@@ -1,0 +1,39 @@
+
+// MISE EN FORME  FONCTIONNEMENT  DE COMMANDE
+// liés à cardfunctions.scss
+
+.function {
+    display: flex;
+    flex-direction: column;
+    margin: 48px 0;
+  }
+  .function_title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  
+
+  @media screen and (min-width: 767.8px) {
+    .function {
+      margin: 50px 120px;
+    
+    &title {
+      margin-bottom: 30px;
+    }
+
+  }
+
+@media screen and (min-width: 1024px) {
+
+
+  .function {
+    margin: 50px 180px;
+
+    &_title {
+        margin-bottom: 25px;
+    }
+}}}

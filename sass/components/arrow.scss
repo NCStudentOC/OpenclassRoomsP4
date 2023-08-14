@@ -1,0 +1,13 @@
+//FLECHE RETOUR ACCUEIL
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+    padding-left: 30px;
+    color:$dark;
+    & :hover {
+        color:$greyicon;
+        transition: all 0.2s ease-in-out;
+    }}

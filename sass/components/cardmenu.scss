@@ -1,0 +1,142 @@
+
+    // MISE EN FORME MENU
+
+    .entrees, .plats, .desserts{
+        display: flex;
+        flex-direction: column;
+
+    }  
+
+
+    .first, .second, .three, .four{
+        margin-bottom: 12px;
+    }
+    
+    .trait{
+        width: 40px;
+        height: 3px;
+        background-color:$tertiary;
+        margin :6px 0 10px 0;
+    }
+    
+
+
+    .card_menu {
+        display: flex;
+
+    
+        &_filter {
+            display: flex;
+            height: 42px;
+            gap: 5px;
+            padding: 15px;
+            border-radius: 20px;
+            background: var(--background, $greylight);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            margin-right: 0;
+            position: relative;
+
+// CHECK VERT APPARAISANT EN MIXINS 
+       
+            &:hover .card_menu_check{
+                @include check;
+            }
+            &:hover .card_menu_filter_price{
+                @include margin;
+            }
+            } 
+    
+    
+        &_check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:72px;
+            width: 69px;
+            position: absolute;
+            top:0;
+            border-radius: 0 20px 20px 0;
+            background: $tertiary;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);  
+            
+            transition: all 1s ease-in-out;
+            opacity: 0;
+            right:-69px;
+            cursor: pointer; 
+            
+            .fa-circle-check{
+                color:$light;
+            }
+        
+        
+        }
+    
+    
+ // PARTIE TEXTE MISE NE PLACE DES DIFFERENTS PLATS ET PRIX
+        &_plat{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+       
+        
+    }
+    
+        &_filter_text {
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            color: $dark;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;
+           
+           
+  
+        }
+    
+        &_filter_subtext{
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            color: $dark;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;   
+        }
+    
+        &_filter_price{
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 700;
+            color: $dark;
+
+            transition: all 1s ease-in-out;
+            margin-right: 0;
+            cursor: pointer; 
+        }
+    
+    
+    &_price{
+        display: flex;
+       align-items: flex-end;
+       margin-left: auto;
+    
+    }
+    }
+    
+
+    @media screen and (min-width: 1024px) {
+
+        .card_menu {
+            justify-content: space-between;
+            flex-direction: row;
+            display: flex;
+        }
+    
+        .entrees, .plats, .desserts{
+            margin:  0 120px;      
+        }  
+    }

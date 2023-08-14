@@ -1,0 +1,29 @@
+// TEXTE RESERVATION ET EXPLORER LES RESTAURANTS
+// liés avec explorebutton.scss
+
+.reserve {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $greylight;
+    z-index: 0;
+
+    &_title {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        padding: 40px 42px 10px;
+        text-align: center;
+    }
+
+    &_subtitle {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: $dark;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+}
+
