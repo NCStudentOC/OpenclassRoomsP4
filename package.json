@@ -1,0 +1,11 @@
+{
+  "name": "np4omf",
+  "version": "1.0.0",
+  "description": "\"A simple sass compile config\"",
+  "main": "index.js",
+  "scripts": {
+  "sass-dev": "sass ./sass/main.scss ./assets/css/main.css --watch"
+  },
+  "author":"NCStudentOC",
+  "license": "ISC"
+}

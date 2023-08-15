@@ -13,11 +13,14 @@
 // MIXINS CHECK VERT  APPARITION PAGE DES RESTAURANTS
 
 @mixin check {  
-    right :0px; 
     opacity: 1;
+    width:69px;
+    top :0;
+    right:0;
 }
 
 @mixin margin{
     margin-right: 60px;
 
 }
+

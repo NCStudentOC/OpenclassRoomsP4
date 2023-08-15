@@ -66,12 +66,13 @@ body {
   height: 50px;
   border-radius: 25px;
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
-  transition: all 5s;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition: all 5s ease-in-out;
 }
 .button_form:hover {
   background: linear-gradient(182deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 15px 50px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: all 5s ease-in-out;
 }
 .button_text {
   font-family: Roboto;
@@ -172,14 +173,15 @@ body {
 
 @media screen and (min-width: 1024px) {
   .restaurants {
-    padding: 0 50px;
+    padding: 0 180px;
     margin-bottom: 0;
   }
   .cards {
     flex-direction: row;
-    padding-left: 0;
-    padding-right: 0;
-    gap: 50px;
+    padding-left: 17px;
+    padding-right: 18px;
+    row-gap: 50px;
+    justify-content: space-between;
   }
   .cards_restaurants {
     flex-basis: 45%;
@@ -187,11 +189,6 @@ body {
   }
   .cards img {
     object-position: 0 90%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .cards img {
-    object-position: 50% 60%;
   }
 }
 .heart {
@@ -255,7 +252,8 @@ body {
   color: black;
 }
 .card_function_filter:hover {
-  box-shadow: 0px 4px 15px 0px rgba(147, 66, 220, 0.35);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: var(--background, white);
   transition: all 0.5s ease-in-out;
 }
 .card_function_filter:hover .grey {
@@ -286,11 +284,15 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .function {
+    margin: 50px 180px;
+  }
+  .function_title {
+    margin-bottom: 25px;
+  }
   .card_function {
     justify-content: space-between;
     flex-direction: row;
-    padding-left: 0;
-    padding-right: 0;
   }
   .card_function_filter {
     display: flex;
@@ -335,36 +337,30 @@ body {
   position: relative;
 }
 .card_menu_filter:hover .card_menu_check {
+  right: 0px;
   opacity: 1;
-  width: 69px;
-  top: 0;
-  right: 0;
 }
 .card_menu_filter:hover .card_menu_filter_price {
   margin-right: 60px;
-}
-.card_menu_filter:hover .fa-circle-check {
-  transform: rotate(720deg);
 }
 .card_menu_check {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 72px;
-  width: 0px;
+  width: 69px;
   position: absolute;
   top: 0;
-  right: 0;
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   transition: all 1s ease-in-out;
   opacity: 0;
+  right: -69px;
   cursor: pointer;
 }
 .card_menu_check .fa-circle-check {
   color: white;
-  transition: transform 2000ms ease-in-out;
 }
 .card_menu_plat {
   display: flex;
@@ -379,18 +375,12 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: black;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .card_menu_filter_subtext {
   font-family: Roboto;
   font-size: 15px;
   font-weight: 300;
   color: black;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .card_menu_filter_price {
   font-family: Roboto;
@@ -548,7 +538,7 @@ header .big_title {
 }
 @media screen and (min-width: 767.8px) and (min-width: 1024px) {
   .function {
-    margin: 50px 50px;
+    margin: 50px 180px;
   }
   .function_title {
     margin-bottom: 25px;
@@ -639,7 +629,7 @@ header .big_title {
 }
 
 .img_size {
-  width: 100%;
+  width: 110%;
 }
 
 .background_heart {
@@ -669,7 +659,13 @@ header .big_title {
 
 @media screen and (min-width: 1024px) {
   .background {
-    margin: -40px 50px 0px 50px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: -40px 193px 0px 193px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #F6F6F6;
   }
   .background_heart {
     justify-content: center;
@@ -677,13 +673,9 @@ header .big_title {
   .img_size {
     width: 100%;
     height: 400px;
+    object-fit: cover;
     object-position: 50% 60%;
   }
 }
-@media screen and (min-width: 1440px) {
-  .background {
-    margin: -40px 193px 0px 193px;
-  }
-}
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css--watch.map */

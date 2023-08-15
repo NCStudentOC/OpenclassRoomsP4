@@ -111,17 +111,17 @@
 @media screen and (min-width: 1024px) {
 
 .restaurants {
-        padding:0 180px;
+        padding:0 50px;
         margin-bottom: 0;
     }
     
 
 .cards {
     flex-direction: row;
-    padding-left: 17px;
-    padding-right: 18px;
-    row-gap: 50px;
-    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 50px;
+    
 
 
     &_restaurants {
@@ -136,3 +136,13 @@
 }
 
 } 
+
+
+@media screen and (min-width: 1440px) {
+    .cards img {
+
+        object-position: 50% 60%;
+    
+    }
+}
+    

@@ -1,14 +1,10 @@
+
+
 @keyframes appartion{
-    0%{ 
+    0%{  
+        transform: translateY(-50%);
         opacity :0;
     }
-
-    30%{
-        opacity :0;
-        transform: translateY(50%);
-    }  
-
-
    
     100% {
         opacity: 1;
@@ -19,32 +15,18 @@
 }
 
 .first{
-    animation: appartion 3s  ease-in-out;
-    
+    animation: appartion 1000ms  ease-in-out alternate;
+
 }
 .second{
-    animation: appartion 2s ease-in-out;
+    animation: appartion 1500ms ease-in-out alternate;
 
 }
 .three{
-    animation: appartion 1s  ease-in-out;
-
+    animation: appartion 2000ms  ease-in-out;
+    animation-direction: alternate
 }
 .four{
-    animation: appartion 4s  ease-in-out;
-
+    animation: appartion 2500ms  ease-in-out;
+    animation-direction: alternate
 }
-
-// @keyframes glissement{
-//     0% {
-//         transform: translateX(-200px);
-//         opacity :0;
-
-//     }
-//     100% {
-//         transform: translateX(0px);
-//         opacity: 1;
-//     }
-// }
-// .sub_title{
-//     animation: glissement 3s  ease-in-out;}
