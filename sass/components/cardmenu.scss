@@ -44,10 +44,10 @@
             &:hover .card_menu_filter_price{
                 @include margin;
             }
+
             &:hover .fa-circle-check{
-                transform: rotate(720deg);
-            }
-           
+                transform: rotate(360deg);}
+          
         }
     
         &_check {
@@ -70,11 +70,7 @@
             .fa-circle-check{
                 color:$light;
                 transition : transform 2000ms ease-in-out;
-                
-             
             }
-        
-        
         }
     
     

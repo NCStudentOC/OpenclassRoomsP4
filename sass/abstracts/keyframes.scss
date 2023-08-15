@@ -1,4 +1,4 @@
-
+// Apparition des menus de haut en bas
 
 @keyframes appartion{
     0%{  
@@ -8,18 +8,16 @@
    
     100% {
         opacity: 1;
-        transform: translateY(0%);
-       
-
+        transform: translateY(0%);  
     }
 }
 
 .first{
-    animation: appartion 1000ms  ease-in-out alternate;
+    animation: appartion 1000ms  ease-in-out ;
 
 }
 .second{
-    animation: appartion 1500ms ease-in-out alternate;
+    animation: appartion 1500ms ease-in-out ;
 
 }
 .three{
@@ -30,3 +28,22 @@
     animation: appartion 2500ms  ease-in-out;
     animation-direction: alternate
 }
+
+
+
+
+// Logo check tournant
+// @keyframes rotat{
+//     0%{  
+//         transform: rotate(0deg);
+//     }
+   
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
+// .fa-circle-check{
+//     animation: rotat 2s linear;
+//     animation-iteration-count:2 ;
+
+// }

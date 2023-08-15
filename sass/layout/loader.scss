@@ -1,0 +1,92 @@
+.loader {
+    // background-color: $grey ;
+    background: linear-gradient(175deg, $primary 0%, $secondary 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    // display : none;
+   
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+        background-color: $greylight;
+        gap: 16px;
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        padding: 20px;
+    }   
+}
+
+.text {
+    font-family: Shrikhand;
+    font-size: 60px;
+    font-weight: 400;
+    color: $greylight;
+    animation: color 3000ms  ease-in-out forwards;
+   
+}
+.spheres{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap : 50px;
+   
+}
+
+.sphere {  
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rebond 3000ms 1200ms linear infinite;
+    // animation-fill-mode:backwards;
+}
+
+.sphereone{
+    background-color: $primary;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    
+}
+
+.spheretwo{
+    background-color: $tertiary;
+    animation-delay: 300ms;
+}
+
+.spherethree{
+    background-color: $secondary;
+   
+}
+
+@keyframes color {
+    0% {
+        color: $light;
+        opacity: 1;
+    }
+
+    100% {
+        color: $dark;
+        opacity: 1;
+        
+    }
+}
+
+@keyframes rebond {
+    0% { opacity: 1;
+        transform:translateY(-80%)
+    }
+
+    50% {opacity: 1;
+        transform:translateY(0%)
+    }
+
+
+    100% {opacity: 1;
+        transform:translateY(-80%)
+    }
+}
