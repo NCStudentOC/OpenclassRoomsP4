@@ -21,9 +21,48 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
-@keyframes appartion {
+@keyframes appartionone {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes appartiontwo {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes appartionthree {
+  0% {
+    transform: translateY(-250%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes appartionfour {
+  0% {
+    transform: translateY(-250%);
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -32,20 +71,23 @@ body {
   }
 }
 .first {
-  animation: appartion 1000ms ease-in-out;
+  animation: appartionone 1000ms linear;
+  top: 0;
 }
 
 .second {
-  animation: appartion 1500ms ease-in-out;
+  animation: appartiontwo 2000ms linear;
+  top: 0;
 }
 
 .three {
-  animation: appartion 2000ms ease-in-out;
+  animation: appartionthree 3000ms ease-in-out;
   animation-direction: alternate;
+  top: 0;
 }
 
 .four {
-  animation: appartion 2500ms ease-in-out;
+  animation: appartionfour 4000ms ease-in-out;
   animation-direction: alternate;
 }
 
@@ -155,15 +197,7 @@ body {
     margin-bottom: 0;
   }
   .cards {
-    flex-direction: column;
-    padding-left: 17px;
-    padding-right: 18px;
     row-gap: 50px;
-    justify-content: space-between;
-  }
-  .cards_restaurants {
-    flex-basis: 45%;
-    flex-wrap: wrap;
   }
 }
 .cards img {
@@ -180,16 +214,16 @@ body {
     padding-left: 0;
     padding-right: 0;
     gap: 50px;
-  }
-  .cards_restaurants {
-    flex-basis: 45%;
-    flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .cards img {
     object-position: 0 90%;
   }
 }
 @media screen and (min-width: 1440px) {
+  .restaurants {
+    padding: 0 180px;
+  }
   .cards img {
     object-position: 50% 60%;
   }
@@ -206,7 +240,7 @@ body {
   position: absolute;
 }
 .heart_regular:hover {
-  opacity: 0.5;
+  opacity: 0;
   transition: all 1s ease-in-out;
 }
 .heart_solid {
@@ -287,10 +321,10 @@ body {
 
 @media screen and (min-width: 1024px) {
   .card_function {
-    justify-content: space-between;
     flex-direction: row;
     padding-left: 0;
     padding-right: 0;
+    justify-content: space-between;
   }
   .card_function_filter {
     display: flex;
@@ -302,6 +336,14 @@ body {
     background: var(--background, #F6F6F6);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card_function {
+    gap: 80px;
+  }
+  .card_function_filter {
+    width: 80%;
   }
 }
 .entrees, .plats, .desserts {
@@ -505,6 +547,7 @@ header .logo {
   width: 100%;
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 header .logo_title {
   font-family: Shrikhand;
@@ -545,12 +588,18 @@ header .big_title {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 767.8px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .function {
     margin: 50px 50px;
   }
   .function_title {
     margin-bottom: 25px;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .function {
+    margin: 50px 180px;
   }
 }
 .reserve {
@@ -622,9 +671,14 @@ header .big_title {
   color: black;
   padding-left: 20px;
   margin-top: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
+@media screen and (min-width: 1024px) {
+  .restaurants_title {
+    padding-left: 0;
+  }
+}
 .background {
   display: flex;
   position: relative;
@@ -699,7 +753,7 @@ header .big_title {
   top: 0;
   right: 0;
   bottom: 0;
-  animation: loader_animate 3500ms forwards 2500ms;
+  animation: loader_animate 4500ms forwards 1000ms;
   z-index: 1000;
 }
 .loader_card {
@@ -710,7 +764,7 @@ header .big_title {
   border-radius: 15px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   padding: 20px;
-  animation: card_color 1000ms ease-in-out forwards;
+  animation: card_color 2000ms linear forwards;
 }
 
 .text {
@@ -718,7 +772,7 @@ header .big_title {
   font-size: 60px;
   font-weight: 400;
   color: #F6F6F6;
-  animation: color 3000ms ease-in-out 1000ms forwards;
+  animation: color 2000ms linear 800ms forwards;
 }
 
 .spheres {
@@ -733,13 +787,12 @@ header .big_title {
   height: 15px;
   border-radius: 50%;
   opacity: 0;
-  animation: rebond 4000ms 1200ms linear infinite;
+  animation: rebond 1000ms 500ms linear infinite;
 }
 
 .sphereone {
   background-color: #9356DC;
   animation-delay: 1s;
-  -webkit-animation-delay: 1s;
 }
 
 .spheretwo {
@@ -751,9 +804,18 @@ header .big_title {
   background-color: #FF79DA;
 }
 
+.welcome {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
 @keyframes color {
   0% {
-    color: white;
+    color: #F6F6F6;
     opacity: 0;
   }
   100% {
@@ -770,19 +832,22 @@ header .big_title {
     opacity: 1;
     transform: translateY(0%);
   }
-  100% {
+  0% {
     opacity: 1;
     transform: translateY(-80%);
   }
 }
 @keyframes card_color {
   0% {
-    color: white;
     opacity: 0;
+    background-color: #F6F6F6;
+    transform: translateY(50%);
+  }
+  50% {
+    background-color: white;
   }
   100% {
-    color: black;
-    opacity: 1;
+    transform: translateY(50%);
   }
 }
 @keyframes loader_animate {

@@ -1,8 +1,8 @@
 // Apparition des menus de haut en bas
 
-@keyframes appartion{
+@keyframes appartionone{
     0%{  
-        transform: translateY(-50%);
+        transform: translateY(-100%);
         opacity :0;
     }
    
@@ -12,20 +12,65 @@
     }
 }
 
+
+@keyframes appartiontwo{
+    0%{  
+        transform: translateY(-200%);
+        opacity :0;
+    }
+    50%{ 
+        opacity :0;}
+   
+   
+    100% {
+        opacity: 1;
+        transform: translateY(0%);  
+    }
+}
+
+@keyframes appartionthree{
+    0%{  
+        transform: translateY(-250%);
+        opacity :0;
+    }
+    50%{ 
+        opacity :0;}
+   
+    100% {
+        opacity: 1;
+        transform: translateY(0%);  
+    }
+}
+
+@keyframes appartionfour{
+    0%{  
+        transform: translateY(-250%);
+        opacity :0;
+    }
+    50%{ 
+        opacity :0;}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);  
+    }
+}
 .first{
-    animation: appartion 1000ms  ease-in-out ;
+    animation: appartionone 1000ms  linear ;
+    top : 0;
 
 }
 .second{
-    animation: appartion 1500ms ease-in-out ;
-
+    animation: appartiontwo 2000ms linear  ;
+    top : 0;
 }
 .three{
-    animation: appartion 2000ms  ease-in-out;
-    animation-direction: alternate
+    animation: appartionthree 3000ms  ease-in-out ;
+    animation-direction: alternate;
+    top : 0;
 }
 .four{
-    animation: appartion 2500ms  ease-in-out;
+    animation: appartionfour 4000ms  ease-in-out;
     animation-direction: alternate
 }
 

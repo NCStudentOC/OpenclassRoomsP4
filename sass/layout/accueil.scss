@@ -17,8 +17,19 @@
         color: $dark;
         padding-left: 20px;
         margin-top: 48px;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
     }
 }
 
 
+
+@media screen and (min-width: 1024px) {
+  
+    .restaurants {
+       
+        &_title {
+            padding-left: 0;   
+        }
+    }
+}
+  

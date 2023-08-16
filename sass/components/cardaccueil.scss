@@ -85,17 +85,9 @@
         
     
     .cards {
-        flex-direction: column;
-        padding-left: 17px;
-        padding-right: 18px;
         row-gap: 50px;
-        justify-content: space-between;
+
     
-    
-        &_restaurants {
-            flex-basis: 45%;
-            flex-wrap: wrap;
-         }
     }
 
 }
@@ -121,28 +113,26 @@
     padding-left: 0;
     padding-right: 0;
     gap: 50px;
-    
+    justify-content: space-between;
 
-
-    &_restaurants {
-        flex-basis: 45%;
-        flex-wrap: nowrap;
-     }
 }
+
 .cards img {
 
     object-position: 0 90%;
-
 }
-
 } 
 
 
 @media screen and (min-width: 1440px) {
-    .cards img {
-
-        object-position: 50% 60%;
-    
-    }
+  
+.restaurants {
+    padding:0 180px;
 }
     
+.cards{
+    & img {
+        object-position: 50% 60%;
+    }
+}
+}
