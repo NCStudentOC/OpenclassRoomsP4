@@ -91,10 +91,6 @@ body {
   animation-direction: alternate;
 }
 
-.card_function_hover :hover {
-  background-image: #FF79DA;
-}
-
 .button {
   display: flex;
   justify-content: center;
