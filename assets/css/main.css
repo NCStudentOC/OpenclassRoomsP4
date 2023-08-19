@@ -750,7 +750,7 @@ header .big_title {
   top: 0;
   right: 0;
   bottom: 0;
-  animation: loader_animate 4500ms forwards 1000ms;
+  animation: loader_animate 4000ms forwards 1500ms;
   z-index: 1000;
 }
 .loader_card {
