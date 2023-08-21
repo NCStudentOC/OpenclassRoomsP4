@@ -12,6 +12,7 @@
 
     &_regular {
         position: absolute;
+      
 
 
                
@@ -25,6 +26,7 @@
    
     &_solid {
         position: absolute;
+      
        color: transparent;
        line-height: 1;
        opacity: 0;
@@ -40,3 +42,4 @@
         }
     }
 }
+
