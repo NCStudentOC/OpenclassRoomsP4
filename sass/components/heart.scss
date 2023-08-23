@@ -11,14 +11,12 @@
     right: 35px;
 
     &_regular {
+        opacity: 1;
         position: absolute;
-      
-
-
-               
+       
         &:hover {
             opacity:0;  
-            transition: all 1s ease-in-out;
+            // transition: all 1s ease-in-out;
 
         }
     }

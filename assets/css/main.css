@@ -384,7 +384,7 @@ body {
 }
 .card_menu_filter:hover .fa-circle-check {
   transform: rotate(360deg);
-  transition-delay: 500ms;
+  transition: transform 1000ms 500ms;
 }
 .card_menu_check {
   display: flex;
@@ -772,7 +772,7 @@ header .big_title {
   font-size: 60px;
   font-weight: 400;
   color: #F6F6F6;
-  animation: color 1500ms linear 500ms forwards;
+  animation: color 1800ms linear 500ms forwards;
 }
 
 .spheres {

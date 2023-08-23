@@ -48,7 +48,8 @@
 
             &:hover .fa-circle-check{
                 transform: rotate(360deg);
-            transition-delay: 500ms;}
+            transition: transform 1000ms 500ms;
+       }
           
         }
     
