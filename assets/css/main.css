@@ -786,8 +786,8 @@ header .big_title {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  opacity: 0;
-  animation: rebond 1000ms 500ms linear infinite;
+  opacity: 1;
+  animation: rebond 1500ms 500ms linear infinite;
 }
 
 .sphereone {
@@ -824,17 +824,15 @@ header .big_title {
   }
 }
 @keyframes rebond {
-  0% {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
     opacity: 1;
-    transform: translateY(-80%);
   }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
+  40% {
+    transform: translateY(-30px);
   }
-  0% {
-    opacity: 1;
-    transform: translateY(-80%);
+  60% {
+    transform: translateY(-15px);
   }
 }
 @keyframes card_color {
