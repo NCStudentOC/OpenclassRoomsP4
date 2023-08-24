@@ -753,7 +753,7 @@ header .big_title {
   top: 0;
   right: 0;
   bottom: 0;
-  animation: loader_animate 4000ms forwards 1300ms;
+  animation: loader_animate 1700ms forwards 2500ms;
   z-index: 1000;
 }
 .loader_card {
@@ -765,6 +765,7 @@ header .big_title {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   padding: 20px;
   animation: card_color 1500ms linear forwards;
+  justify-content: space-between;
 }
 
 .text {
@@ -772,7 +773,7 @@ header .big_title {
   font-size: 60px;
   font-weight: 400;
   color: #F6F6F6;
-  animation: color 1800ms linear 500ms forwards;
+  animation: color 1000ms linear 500ms forwards;
 }
 
 .spheres {
